@@ -44,6 +44,13 @@
         font-size: 3.4rem;
         padding: 2rem;
         @include m.HeadingCursiva;
+
+        @include m.tablet {  
+            font-size: 3rem
+        }
+        @include m.desktop {  
+            font-size: 4rem
+        }
     }
 
     &__enlace{

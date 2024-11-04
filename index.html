@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Lato:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./build/css/app.css">
 </head>
 <body>
@@ -54,10 +55,19 @@
 
     <!-- SLIDER DE IMAGENES -->
 
-    <section class="slider">
-        <ul class="slider__contenedor">
-            <li class="slider__slide">
-                <img src="./build/img/slide_01.avif" alt="slide uno">
+    <section class="swiper contenedor">
+        <ul class="swiper-wrapper">
+            <!-- IMAGEN UNO -->
+            <li class="swiper-slide">
+                <img class="slider__imagen" src="./build/img/slide_01.avif" alt="slide uno">
+            </li>
+            <!-- IMAGEN DOS -->
+            <li class="swiper-slide">
+                <img class="slider__imagen" src="./build/img/slide_02.avif" alt="slide dos">
+            </li>
+            <!-- IMAGEN TRES -->
+            <li class="swiper-slide">
+                <img class="slider__imagen" src="./build/img/slide_03.avif" alt="slide tres">
             </li>
         </ul>
     </section>
@@ -151,17 +161,17 @@
                         <!-- VIERNES -->
                         <tr class="tabla__tr">
                             <td class="tabla__td">Viernes</td>
-                            <td class="tabla__td">11:30</td>
+                            <td class="tabla__td">12:00</td>
                             <td class="tabla__td">20:00</td>
                         </tr>
                         <!-- SABADO -->
-                        <tr class="tabla__tr"></tr>
+                        <tr class="tabla__tr">
                             <td class="tabla__td">Sábado</td>
                             <td class="tabla__td">12:00</td>
                             <td class="tabla__td">20:00</td>
                         </tr>
                         <!-- DOMINGO -->
-                        <tr class="tabla__tr"></tr>
+                        <tr class="tabla__tr">
                             <td class="tabla__td">Domingo</td>
                             <td class="tabla__td" colspan="2">Cerrado</td>
                         </tr>
@@ -170,6 +180,138 @@
             </div>
         </div>
     </section>
+
+    <!-- PRODUCTOS -->
+    <main class="productos contenedor seccion">
+        <h2 class="productos__heading">Nuestros <span>productos</span></h2>
+
+        <div class="productos__grid">
+            <!-- PRODUCTO UNO -->
+            <div class="producto">
+
+                <div class="producto__mask">
+                    <img class="producto__imagen" src="./build/img/producto_01.avif" alt="Imagen producto">
+                </div>
+
+                <div class="producto__contenido">
+                    <h3 class="producto__nombre">Producto 1</h3>
+                    <p class="producto__descripcion">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit, atque, eveniet neque.
+                    </p>
+                    <p class="producto__precio">$25</p>
+                </div>
+            </div>
+            <!-- PRODUCTO DOS -->
+            <div class="producto">
+
+                <div class="producto__mask">
+                    <img class="producto__imagen" src="./build/img/producto_02.avif" alt="Imagen producto">
+                </div>
+                
+                <div class="producto__contenido">
+                    <h3 class="producto__nombre">Producto 2</h3>
+                    <p class="producto__descripcion">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit, atque, eveniet neque.
+                    </p>
+                    <p class="producto__precio">$25</p>
+                </div>
+            </div>
+            <!-- PRODUCTO TRES -->
+            <div class="producto">
+
+                <div class="producto__mask">
+                    <img class="producto__imagen" src="./build/img/producto_03.avif" alt="Imagen producto">
+                </div>
+                
+                <div class="producto__contenido">
+                    <h3 class="producto__nombre">Producto 3</h3>
+                    <p class="producto__descripcion">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit, atque, eveniet neque.
+                    </p>
+                    <p class="producto__precio">$25</p>
+                </div>
+            </div>
+            <!-- PRODUCTO CUATRO -->
+            <div class="producto">
+
+                <div class="producto__mask">
+                    <img class="producto__imagen" src="./build/img/producto_04.avif" alt="Imagen producto">
+                </div>
+                
+                <div class="producto__contenido">
+                    <h3 class="producto__nombre">Producto 4</h3>
+                    <p class="producto__descripcion">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit, atque, eveniet neque.
+                    </p>
+                    <p class="producto__precio">$25</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- CITAS -->
+
+    <section class="cita">
+        <h2 class="cita__heading">Realiza una cita</h2>
+        <p class="cita__texto">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Totam delectus laboriosam ducimus dolorem explicabo incidunt, 
+            blanditiis minima necessitatibus asperiores at error quibusdam molestiae 
+            accusantium cupiditate pariatur nemo, magnam voluptatibus qui.
+        </p>
+        <a href="#" class="cita__enlace">Leer mas</a>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="footer__grid contenedor seccion">
+            <div class="footer__widget">
+                <h3 class="footer__heading">Nosotros</h3>
+                <p class="footer__texto">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Fugit, alias debitis et deserunt numquam explicabo porro
+                </p>
+            </div>
+
+            <div class="footer__widget">
+                <h3 class="footer__heading">Horarios</h3>
+                <p class="footer__texto">Lun - Vie: 10AM - 8PM</p>
+                <p class="footer__texto">Vie - Sab: 12PM - 8PM </p>
+                <p class="footer__texto">Domingo: Cerrado</p>
+            </div>
+
+            <div class="footer__widget">
+                <h3 class="footer__heading">Contacto</h3>
+                <p class="footer__texto">Av. Revolucion 1818</p>
+                <!-- NAVEGACION SOCIALES-->
+                <nav class="sociales">
+                    <a class="sociales__enlace" href="https://facebook.com">
+                        <span class="sociales__accesible">Facebook</span>
+                    </a>
+                    <a class="sociales__enlace" href="https://twitter.com">
+                        <span class="sociales__accesible">Twitter</span>
+                    </a>
+                    <a class="sociales__enlace" href="https://instagram.com">
+                        <span class="sociales__accesible">Instagram</span>
+                    </a>
+                    <a class="sociales__enlace" href="https://pinterest.com">
+                        <span class="sociales__accesible">Pinterest</span>
+                    </a>
+                    <a class="sociales__enlace" href="https://youtube.com">
+                        <span class="sociales__accesible">YouTube</span>
+                    </a>
+                    <a class="sociales__enlace" href="https://tiktok.com">
+                        <span class="sociales__accesible">TikTok</span> 
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <p class="footer__copyright">Carolina Spa & Salon. Todos los derechos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
 
 </body>
 </html>
